@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0"
+      prefWidth="320.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="by.ustsinovich.perseptron.controller.MainController">
+    <children>
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="50.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@test/c-test.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="120.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@test/t-test.jpg"/>
+            </image>
+        </ImageView>
+        <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="10.0" layoutY="190.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@test/h-test.jpg"/>
+            </image>
+        </ImageView>
+        <Label layoutX="80.0" layoutY="72.0" text="C test result:"/>
+        <Label layoutX="80.0" layoutY="142.0" text="T test result:"/>
+        <Label layoutX="80.0" layoutY="212.0" text="H test result:"/>
+        <TextField fx:id="tfCTest" editable="false" layoutX="150.0" layoutY="68.0"/>
+        <TextField fx:id="tfTTest" editable="false" layoutX="150.0" layoutY="138.0"/>
+        <TextField fx:id="tfHTest" editable="false" layoutX="150.0" layoutY="208.0"/>
+        <ToolBar prefHeight="40.0" prefWidth="320.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#onBtnRunAction" text="Run!"/>
+            </items>
+        </ToolBar>
+    </children>
+</Pane>
