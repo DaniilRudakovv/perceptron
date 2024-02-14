@@ -4,8 +4,8 @@ module by.ustsinovich.perseptron {
     requires java.desktop;
 
 
-    opens by.ustsinovich.perseptron to javafx.fxml;
-    exports by.ustsinovich.perseptron;
-    exports by.ustsinovich.perseptron.controller;
-    opens by.ustsinovich.perseptron.controller to javafx.fxml;
+    opens by.ustsinovich.perceptron to javafx.fxml;
+    exports by.ustsinovich.perceptron;
+    exports by.ustsinovich.perceptron.controller;
+    opens by.ustsinovich.perceptron.controller to javafx.fxml;
 }

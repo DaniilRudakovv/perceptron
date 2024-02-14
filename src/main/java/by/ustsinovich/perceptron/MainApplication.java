@@ -1,4 +1,4 @@
-package by.ustsinovich.perseptron;
+package by.ustsinovich.perceptron;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,7 @@ public class MainApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 320);
-        stage.setTitle("Perseptron");
+        stage.setTitle("Perceptron");
         stage.setResizable(false);
         stage.setMaximized(false);
         stage.setScene(scene);

@@ -1,4 +1,4 @@
-package by.ustsinovich.perseptron.view;
+package by.ustsinovich.perceptron.view;
 
 import javafx.scene.control.TextField;
 

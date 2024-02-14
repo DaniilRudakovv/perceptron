@@ -1,22 +1,22 @@
-package by.ustsinovich.perseptron.perseptron;
+package by.ustsinovich.perceptron.perceptron;
 
-import by.ustsinovich.perseptron.model.Image;
-import by.ustsinovich.perseptron.utils.PerseptronUtils;
+import by.ustsinovich.perceptron.model.Image;
+import by.ustsinovich.perceptron.utils.PerceptronUtils;
 
 import java.util.List;
 
-public class Perseptron {
+public class Perceptron {
     private final int[] weights;
     private final int iterationCount;
 
-    public Perseptron(int imagePixelCount, int iterationCount) {
+    public Perceptron(int imagePixelCount, int iterationCount) {
         this.weights = new int[imagePixelCount];
         this.iterationCount = iterationCount;
     }
 
     public void train(List<Image> trainingSet) {
         for (int i = 0; i < iterationCount - 1; i++) {
-            PerseptronUtils.runForRandomItem(trainingSet, image -> {
+            PerceptronUtils.runForRandomItem(trainingSet, image -> {
                 boolean isTargetImage = isTargetImage(image);
                 if (image.isTargetImage() != isTargetImage) {
                     if (image.isTargetImage()) {

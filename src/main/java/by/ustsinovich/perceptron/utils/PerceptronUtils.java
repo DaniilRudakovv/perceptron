@@ -1,9 +1,9 @@
-package by.ustsinovich.perseptron.utils;
+package by.ustsinovich.perceptron.utils;
 
 import java.util.List;
 import java.util.Random;
 
-public class PerseptronUtils {
+public class PerceptronUtils {
     private static final Random RANDOM = new Random();
 
     public static <E> void runForRandomItem(List<E> list, Action<E> action) {

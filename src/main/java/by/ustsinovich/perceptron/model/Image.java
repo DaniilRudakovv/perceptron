@@ -1,10 +1,10 @@
-package by.ustsinovich.perseptron.model;
+package by.ustsinovich.perceptron.model;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-import static by.ustsinovich.perseptron.utils.ImageUtils.imageToPixelArray;
+import static by.ustsinovich.perceptron.utils.ImageUtils.imageToPixelArray;
 
 public class Image {
     private final int[] pixelArray;

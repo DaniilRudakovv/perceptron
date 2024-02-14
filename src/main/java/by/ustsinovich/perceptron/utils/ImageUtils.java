@@ -1,7 +1,6 @@
-package by.ustsinovich.perseptron.utils;
+package by.ustsinovich.perceptron.utils;
 
-import by.ustsinovich.perseptron.MainApplication;
-import by.ustsinovich.perseptron.model.Image;
+import by.ustsinovich.perceptron.model.Image;
 
 import javax.imageio.ImageIO;
 import java.io.File;
@@ -9,7 +8,6 @@ import java.io.IOException;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class ImageUtils {
     public static int[] imageToPixelArray(String fileName) throws IOException {
